@@ -1,0 +1,15 @@
+# Backend dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Runtime artifacts
+*.pid
+*.seed
+*.pid.lock
