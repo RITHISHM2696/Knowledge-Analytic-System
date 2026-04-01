@@ -1,0 +1,402 @@
+/* Search Student Page */
+.search-container {
+  padding: 20px 0;
+}
+
+.search-header {
+  margin-bottom: 40px;
+}
+
+.search-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.search-title i {
+  margin-right: 12px;
+  color: #667eea;
+}
+
+.search-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* Search Form */
+.search-form-container {
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  gap: 0;
+}
+
+.search-input-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  border: 2px solid #e2e8f0;
+  padding: 14px 20px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.search-btn:hover:not(:disabled) {
+  transform: translateX(3px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.search-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Alert */
+.alert {
+  border-radius: 10px;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.alert-danger {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+}
+
+.alert i {
+  font-size: 18px;
+}
+
+/* Search Result */
+.search-result {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 25px;
+}
+
+.student-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0;
+}
+
+.student-roll-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Score Boxes */
+.score-box {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 5px solid;
+}
+
+.academic-box {
+  border-left-color: #3b82f6;
+}
+
+.technical-box {
+  border-left-color: #f59e0b;
+}
+
+.score-box-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.score-box-title i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.score-display {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.score-components {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* Overall Score & Performance */
+.overall-score-box {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 5px solid #667eea;
+}
+
+.overall-display {
+  font-size: 48px;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.performance-box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 5px solid;
+}
+
+.performance-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+/* Detailed Breakdown */
+.detailed-breakdown {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  border: 2px solid #e2e8f0;
+}
+
+.breakdown-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.breakdown-item:hover {
+  background: #e2e8f0;
+}
+
+.breakdown-label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 14px;
+}
+
+.breakdown-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Initial State */
+.initial-state,
+.no-result {
+  text-align: center;
+  padding: 60px 20px;
+  color: #94a3b8;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.initial-state i,
+.no-result i {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.initial-state p,
+.no-result p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Loading */
+.spinner-border {
+  color: #667eea !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-title {
+    font-size: 28px;
+  }
+
+  .search-input-wrapper {
+    max-width: 100%;
+  }
+
+  .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .student-name {
+    font-size: 22px;
+  }
+
+  .score-display {
+    font-size: 28px;
+  }
+
+  .overall-display {
+    font-size: 36px;
+  }
+
+  .breakdown-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-title {
+    font-size: 22px;
+  }
+
+  .search-subtitle {
+    font-size: 13px;
+  }
+
+  .search-input {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    padding: 12px 16px;
+  }
+
+  .result-card {
+    padding: 20px;
+  }
+
+  .result-header {
+    margin-bottom: 20px;
+  }
+
+  .student-name {
+    font-size: 18px;
+  }
+
+  .student-roll-badge {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+
+  .score-box {
+    padding: 15px;
+  }
+
+  .score-display {
+    font-size: 24px;
+  }
+
+  .overall-display {
+    font-size: 32px;
+  }
+
+  .performance-badge {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .detailed-breakdown {
+    padding: 15px;
+  }
+
+  .breakdown-item {
+    padding: 12px;
+  }
+}

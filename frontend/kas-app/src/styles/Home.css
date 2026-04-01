@@ -1,0 +1,293 @@
+/* Home Page Styling */
+.home-container {
+  padding: 20px 0;
+}
+
+.home-header {
+  margin-bottom: 40px;
+}
+
+.home-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+  min-height: 140px;
+}
+
+.stat-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+.stat-card-total {
+  border-left-color: #3b82f6;
+}
+
+.stat-card-excellent {
+  border-left-color: #10b981;
+}
+
+.stat-card-average {
+  border-left-color: #f59e0b;
+}
+
+.stat-card-needs {
+  border-left-color: #ef4444;
+}
+
+.stat-icon {
+  font-size: 48px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.stat-card-total .stat-icon {
+  color: #3b82f6;
+}
+
+.stat-card-excellent .stat-icon {
+  color: #10b981;
+}
+
+.stat-card-average .stat-icon {
+  color: #f59e0b;
+}
+
+.stat-card-needs .stat-icon {
+  color: #ef4444;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* Top Students Section */
+.top-students-section {
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.section-title i {
+  margin-right: 12px;
+  color: #f59e0b;
+}
+
+/* Top Student Card */
+.top-student-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.top-student-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.rank-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.card-body {
+  padding: 30px;
+  padding-top: 60px;
+}
+
+.student-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.student-roll {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.scores-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.score-item:hover {
+  background: #e2e8f0;
+}
+
+.score-label {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.score-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.overall-score {
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
+  padding: 10px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.performance-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+/* No Data State */
+.no-data {
+  text-align: center;
+  padding: 60px 20px;
+  color: #94a3b8;
+}
+
+.no-data i {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.no-data p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 28px;
+  }
+
+  .stat-card {
+    min-height: 120px;
+    padding: 20px;
+  }
+
+  .stat-value {
+    font-size: 24px;
+  }
+
+  .stat-icon {
+    font-size: 36px;
+    min-width: 50px;
+  }
+
+  .scores-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 24px;
+  }
+
+  .home-subtitle {
+    font-size: 14px;
+  }
+
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .stat-icon {
+    font-size: 32px;
+  }
+
+  .scores-container {
+    grid-template-columns: 1fr;
+  }
+}
