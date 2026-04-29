@@ -2,7 +2,7 @@
 
 A modern web-based Knowledge Analytics System for managing, analyzing, and tracking student performance using academic metrics and technical skill assessments.
 
-## 🚀 Features
+## Features
 
 ### Dashboard
 - Attractive sidebar navigation with Home, Profile, Add Student, Student Details, Search Student, and Logout options
@@ -56,7 +56,7 @@ A modern web-based Knowledge Analytics System for managing, analyzing, and track
 - Body Parser for JSON parsing
 - CORS for cross-origin requests
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v14 or higher)
 - MySQL (v5.7 or higher)
@@ -121,7 +121,7 @@ npm start
 - **Email**: admin@gmail.com
 - **Password**: 1234
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Knowledge Analytics System/
@@ -158,7 +158,7 @@ Knowledge Analytics System/
     │       └── Profile.css
 ```
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Student Routes (Base URL: http://localhost:5000/student)
 
