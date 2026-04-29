@@ -3,7 +3,6 @@
 A modern web-based Knowledge Analytics System for managing, analyzing, and tracking student performance using academic metrics and technical skill assessments.
 
 ## Features
-
 ### Dashboard
 - Attractive sidebar navigation with Home, Profile, Add Student, Student Details, Search Student, and Logout options
 - Modern and responsive design with Bootstrap framework
