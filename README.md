@@ -11,7 +11,7 @@ A modern web-based Knowledge Analytics System for managing, analyzing, and track
 - **Summary Cards**: Display Total Students, Excellent Students, Average Students, and Needs Improvement Students count
 - **Top 3 Performers**: Show top 3 students based on overall knowledge score with detailed cards
 - **Responsive Grid Layout**: Adapts to all device sizes
-  
+
 ### Add Student Section
 - Well-designed HTML form with input validation
 - Fields: Roll Number, Name, CGPA, Attendance %, Technical Skills (C, Java, Python ratings)
